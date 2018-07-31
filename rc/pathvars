@@ -1,0 +1,8 @@
+function hostname(){echo "Schubert";}
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+export PATH=$HOME/.toolbox/bin:$PATH
+export PATH=$HOME/bin:$PATH
