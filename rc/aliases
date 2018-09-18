@@ -1,20 +1,3 @@
-#### Amazon Stuff ####
-# ssh
-#alias dev='ssh dev-dsk-beauliej-1e-a65ebde4.us-east-1.amazon.com' # jbeaulieu.aka.corp.amazon.com
-alias dev='ssh jbeaulieu.aka.corp.amazon.com'
-
-# cr (open by default)
-alias cr='cr -o'
-
-# brazil
-alias bb='brazil-build'
-alias bws='brazil ws'
-alias bbs='bb server'
-alias bbr='bb release'
-
-# SAM
-alias sam="brazil-build-tool-exec sam"
-
 #### Other Stuff ####
 
 # Apt-get

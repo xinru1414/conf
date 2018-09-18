@@ -3,7 +3,10 @@ DEPS = git
 # Check for dependances in path
 K := $(foreach exec,$(DEPS),$(if $(shell which $(exec)),some string,$(error No $(exec) in PATH)))
 
-install: download link
+install: preinstall download link
+
+preinstall:
+	(groups | grep 'sudo' > /dev/null && ./preinstall.sh)
 
 download:
 	(cd ~; git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh)
