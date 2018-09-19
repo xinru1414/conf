@@ -7,7 +7,3 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 export PATH=$HOME/bin:$PATH
-
-# Go Stuff
-export PATH=$PATH:$(go env GOPATH)/bin
-export GOPATH=$(go env GOPATH)
