@@ -16,9 +16,9 @@ elif (( $+commands[brew] )) ; then
 fi
 
 # Python
-alias python='python3'
-alias py='python'
-alias py3='python3'
+#alias python='python3'
+#alias py='python'
+#alias py3='python3'
 alias pser='python -m SimpleHTTPServer'
 alias spip='sudo -H pip'
 alias pipi='sudo -H pip install'
@@ -44,11 +44,10 @@ alias ga="git add "
 alias gr="git rm "
 
 # SSH
-alias akka='ssh beau0307@akka.d.umn.edu'
-alias bulldog='ssh beau0307@bulldog.d.umn.edu'
-alias derp='ssh derpferd@derpferd.net'
-alias deter='ssh umd882ab@users.deterlab.net'
-alias lars='ssh derpferd@lars.d.umn.edu'
+alias brandy='ssh xinruyan@brandy.lti.cs.cmu.edu'
+alias misty='ssh xinruyan@misty.lti.cs.cmu.edu'
+alias erebor='ssh xinruyan@erebor.lti.cs.cmu.edu'
+alias ethics='ssh xinru@1.233.226.149 -p 81'
 
 # ZSH
 alias ext='extract'

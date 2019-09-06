@@ -109,6 +109,7 @@ export PATH=~/.junest2/opt/junest/bin:$PATH
 
 #export PATH="/home/csgrads/beau0307/miniconda3/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="/Users/xinruyan/miniconda2/bin:$PATH"
 
 #if command -v pyenv 1>/dev/null 2>&1; then
 #  eval "$(pyenv init -)"
