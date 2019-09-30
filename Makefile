@@ -6,7 +6,7 @@ K := $(foreach exec,$(DEPS),$(if $(shell which $(exec)),some string,$(error No $
 install: preinstall download link
 
 preinstall:
-	(groups | grep 'sudo' > /dev/null && ./preinstall.sh)
+	((groups | grep 'sudo' > /dev/null && ./preinstall.sh) || true)
 
 download:
 	(cd ~; git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh)
