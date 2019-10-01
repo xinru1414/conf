@@ -28,6 +28,7 @@ alias pipi='sudo -H pip install'
 
 # Editor
 alias v='nvim'
+alias nvim='nvim.appimage'
 
 # Git: Stole these from Maz@https://github.com/kasldfh/dotfiles
 alias gpm='git push origin master'

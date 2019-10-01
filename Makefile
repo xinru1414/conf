@@ -10,6 +10,7 @@ preinstall:
 
 download:
 	(cd ~; git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh)
+	(cd ~; mkdir -p bin; cd bin; wget https://github.com/neovim/neovim/releases/download/v0.4.2/nvim.appimage; chmod u+x nvim.appimage)
 
 link:
 	ln -s ~/conf/oh-my-zsh/custom/themes/jbb.zsh-theme ~/.oh-my-zsh/custom/themes/jbb.zsh-theme
@@ -29,4 +30,5 @@ unlink:
 
 remove:
 	rm -rf ~/.oh-my-zsh
+	rm -f ~/bin/nvim.appimage
 
