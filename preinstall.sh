@@ -5,7 +5,7 @@ sudo apt install -y tk-dev libxmlsec1-dev
 sudo apt install -y neovim
 
 if [[ "$SHELL" != "/bin/zsh" ]]; then
- chsh -s /bin/zsh
+ sudo chsh -s /bin/zsh $USER
 fi
 
 if [ ! -d "$HOME/.pyenv" ]; then
