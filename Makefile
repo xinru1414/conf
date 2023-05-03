@@ -7,6 +7,9 @@ install: download link
 
 download:
 	(cd ~; git clone https://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh)
+	setups/brew.sh
+	brew install nvim
+	(curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim)
 
 link:
 	mkdir -p ~/.config

@@ -52,11 +52,6 @@ ZSH_THEME="jbb"
 plugins=(git)
 
 # User configuration
-
-export PATH="/home/csugrads/beau0307/LinuxPrograms/lib/:/home/csgrads/beau0307/usr/local/lib:/u01/app/oracle/product/11.2.0/xe/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-# export MANPATH="/usr/local/man:$MANPATH"
-export JUNEST_HOME="~/.junest2"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -73,7 +68,6 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -83,38 +77,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-function enc() {
-openssl aes-256-cbc -in "$1" -out "$1.enc";
-}
-function dcyp() {
-local file=$1;
-openssl aes-256-cbc -d -in "$1" -out "${file%.*}";
-}
-
-# To setup oracle
-if [ -f /u01/app/oracle/product/11.2.0/xe/bin/nls_lang.sh ]; then
-    export ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
-    export ORACLE_SID=XE
-    export NLS_LANG=$("$ORACLE_HOME"/bin/nls_lang.sh)
-    export ORACLE_BASE=/u01/app/oracle
-    export LD_LIBRARY_PATH=$ORACLE_HOME/lib
-    export PATH=$ORACLE_HOME/bin:$PATH
-fi
-
-#export PATH=~/.local/share/junest/bin:$PATH
-#export JUNEST_TEMPDIR=/tmp/j
-export PATH=~/.junest2/opt/junest/bin:$PATH
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-
-#export PATH="/home/csgrads/beau0307/miniconda3/bin:$PATH"
-export PATH="$HOME/bin:$PATH"
-export PATH="/Users/xinruyan/miniconda2/bin:$PATH"
-
-#if command -v pyenv 1>/dev/null 2>&1; then
-#  eval "$(pyenv init -)"
-#fi
-#eval "$(pyenv virtualenv-init -)"
 
 if [ -f ~/.rc/pathvars ]; then
     source ~/.rc/pathvars
