@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
+#Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
@@ -85,3 +85,30 @@ fi
 if [ -f ~/.rc/aliases ]; then
     source ~/.rc/aliases
 fi
+#
+source /Users/Sheenroo/ForeFlight/duster/dust all
+# aws-valt setup
+export AWS_VAULT_KEYCHAIN_NAME=login  # make your life easier (fewer password prompts)
+export AWS_VAULT_PROMPT=osascript     # optional, but gives you a nice dialog prompt to enter your multi-factor auth token
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/Sheenroo/Secrets/ferrous-pact-386214-26aaac90450b.json"
+export PYTHONPATH=$HOME/foreflight/data-engineering/python
+export JAVA_HOME=$(/usr/libexec/java_home)
+export M2_HOME=/Applications/apache-maven-3.9.2
+export PATH=${M2_HOME}/bin:${PATH} 
+export PATH
+export IMPORTDB_ENV="dev"
+export FF_IMPORTDB_PASS="gofly123"
+export FF_IMPORTDB_APOLLO_PASS="TdbBAoXbNu6jDOGZPjTd"
+export AIRFLOWDB_ENV="dev"
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+alias mvn="mvn -e"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/Sheenroo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/Sheenroo/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/Sheenroo/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/Sheenroo/google-cloud-sdk/completion.zsh.inc'; fi
+
